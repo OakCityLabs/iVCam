@@ -1370,10 +1370,18 @@
 				LastUpgradeCheck = 0440;
 				TargetAttributes = {
 					142050C511AB1CCE00460FC9 = {
+						DevelopmentTeam = XDMGL459YN;
 						ProvisioningStyle = Manual;
 					};
 					149D29D211AAFD5600DF1946 = {
+						DevelopmentTeam = XDMGL459YN;
 						ProvisioningStyle = Manual;
+					};
+					E42AA5540E073EEC000C4D64 = {
+						DevelopmentTeam = XDMGL459YN;
+					};
+					E42AA5960E073EFB000C4D64 = {
+						DevelopmentTeam = XDMGL459YN;
 					};
 				};
 			};
@@ -1580,9 +1588,9 @@
 		142050C811AB1CCF00460FC9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				INFOPLIST_FILE = "$(SRCROOT)/../../Sources/Extras/CoreMediaIO/DeviceAbstractionLayer/Devices/Sample/KernelExtension/SampleUserClient-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/IOVideoSample.kext/Contents/PlugIns";
 				MODULE_NAME = com.insta360.cmio.UserClient.Sample;
@@ -1605,7 +1613,11 @@
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../Sources/Extras/CoreMediaIO/DeviceAbstractionLayer/Devices/Sample/SamplePrefix.h";
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../Sources/Extras/CoreAudio/**",
+					"$(SRCROOT)/../../Sources/Extras/CoreMedia/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = (
 					"$(CMIO_SAMPLE_OTHER_CFLAGS)",
 					"-DABSOLUTETIME_SCALAR_TYPE",
@@ -1620,8 +1632,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				EXPORTED_SYMBOLS_FILE = "$(SRCROOT)/../../Sources/Extras/CoreMediaIO/DeviceAbstractionLayer/Devices/Sample/PlugIn/Sample.exp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1660,7 +1672,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"ARCHS[sdk=macosx10.7]" = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				GCC_DYNAMIC_NO_PIC = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(value)",
@@ -1687,9 +1699,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"ARCHS[sdk=macosx10.7]" = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_2)",
 					"$(HEADER_SEARCH_PATHS_QUOTED_FOR_TARGET_1)",
@@ -1713,9 +1724,9 @@
 		14350709147319C300D80B41 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
+				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				INFOPLIST_FILE = "$(SRCROOT)/../../Sources/Extras/CoreMediaIO/DeviceAbstractionLayer/Devices/Sample/KernelExtension/SampleUserClient-Info.plist";
 				INSTALL_PATH = "$(SYSTEM_LIBRARY_DIR)/Extensions/IOVideoSample.kext/Contents/PlugIns";
 				MODULE_NAME = com.insta360.cmio.UserClient.Sample;
@@ -1731,9 +1742,8 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"ARCHS[sdk=macosx10.7]" = "$(ARCHS_STANDARD_32_64_BIT)";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
 				COMBINE_HIDPI_IMAGES = YES;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				FRAMEWORK_SEARCH_PATHS = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
 				GCC_PREFIX_HEADER = "";
@@ -1762,7 +1772,11 @@
 				GCC_ENABLE_CPP_RTTI = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/../../Sources/Extras/CoreMediaIO/DeviceAbstractionLayer/Devices/Sample/SamplePrefix.h";
 				GCC_WARN_CHECK_SWITCH_STATEMENTS = NO;
-				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				HEADER_SEARCH_PATHS = (
+					"$(SRCROOT)/../../Sources/Extras/CoreAudio/**",
+					"$(SRCROOT)/../../Sources/Extras/CoreMedia/**",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				OTHER_CFLAGS = (
 					"$(CMIO_SAMPLE_OTHER_CFLAGS)",
 					"-DABSOLUTETIME_SCALAR_TYPE",
@@ -1779,8 +1793,8 @@
 				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
 				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				EXPORTED_SYMBOLS_FILE = "$(SRCROOT)/../../Sources/Extras/CoreMediaIO/DeviceAbstractionLayer/Devices/Sample/PlugIn/Sample.exp";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1815,7 +1829,7 @@
 				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
 				"ARCHS[sdk=macosx10.7]" = "$(ARCHS_STANDARD_32_64_BIT)";
 				CLANG_CXX_LIBRARY = "libc++";
-				CODE_SIGN_IDENTITY = "Developer ID Application: Shenzhen Arashi Vision Co., Ltd. (847R5ZLN8S)";
+				DEVELOPMENT_TEAM = XDMGL459YN;
 				GCC_DYNAMIC_NO_PIC = NO;
 				HEADER_SEARCH_PATHS = (
 					"$(value)",
